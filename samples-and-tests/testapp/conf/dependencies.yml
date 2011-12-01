@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - ajaxupload -> ajaxupload
+
+repositories:
+    - My modules:
+        type:       local
+        artifact:    ${application.path}/../../
+        contains:
+            - ajaxupload -> *

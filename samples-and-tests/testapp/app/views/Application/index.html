@@ -1,0 +1,24 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{set 'moreStyles'}
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/fileuploader.css'}" />
+#{/set}
+#{set 'moreScripts'}
+<script src="@{'/public/javascripts/fileuploader.js'}" type="text/javascript" charset="utf-8"></script>
+
+<script>
+$(function(){
+	var uploader = new qq.FileUploader({
+	    // pass the dom node (ex. $(selector)[0] for jQuery users)
+	    element: document.getElementById('file-uploader'),
+	    // path to server-side upload script
+	    action: '@{Application.upload}'
+	});
+});
+</script>
+#{/set}
+
+
+<a href="#" id="file-uploader">Upload</a>
+
