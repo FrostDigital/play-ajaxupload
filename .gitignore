@@ -5,13 +5,5 @@ eclipse
 tmp
 logs
 test-result
-modules/*
-*.pid
-samples-and-tests/testapp/eclipse
-samples-and-tests/testapp/tmp
-samples-and-tests/testapp/logs
-samples-and-tests/testapp/test-result
-samples-and-tests/testapp/.classpath
-samples-and-tests/testapp/.settings
-samples-and-tests/testapp/.project
-samples-and-tests/testapp/*.pid
+modules
+lib
