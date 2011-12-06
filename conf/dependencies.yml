@@ -1,4 +1,4 @@
-self: ajaxupload -> ajaxupload 0.1
+self: play -> ajaxupload 0.1
 
 require:
     - play
