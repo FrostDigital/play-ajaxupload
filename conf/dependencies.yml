@@ -1,4 +1,4 @@
-self: play -> ajaxupload 0.1
+self: frost -> ajaxupload 0.1.1
 
 require:
     - play
