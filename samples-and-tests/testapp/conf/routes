@@ -1,16 +1,7 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
+GET     /	     module:ajaxupload
 
-# Home page
-GET     /                                  Application.index
-POST    /upload                            Application.upload
+GET		/(index)?			Application.example1
+GET		/example2			Application.example2
+POST	/upload				Application.upload
 
-# Ignore favicon requests
-GET     /favicon.ico                            404
-
-# Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
-
-# Catch all
-*       /{controller}/{action}                  {controller}.{action}

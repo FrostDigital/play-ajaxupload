@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{set 'moreScripts'}
+<script src="@{'/public/javascripts/fileuploader.js'}" type="text/javascript" charset="utf-8"></script>
+<script src="@{'/public/javascripts/basic-uploader.js'}" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(function(){
+	
+	AU.basicUploader.init({
+		element: $('#file-uploader'),
+		url: '/upload',
+		onComplete: function() {
+			alert("Upload finished!");
+		}
+	});
+	
+});
+</script>
+#{/set}
+
+
+<a href="#" id="file-uploader">Upload</a>
+
